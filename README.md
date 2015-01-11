@@ -22,3 +22,14 @@ vagrant reload
 
 After a while, this should open a Lubuntu session in a new window. You may login as
 vagrant/vagrant.
+
+Usage
+-----
+
+For regular usage do `vagrant up`, for ssh only work you may do
+
+~~~bash
+GUILESS=1 vagrant up
+vagrant ssh
+~~~
+

@@ -1,7 +1,7 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 Vagrant.configure("1") do |config|
-  config.vm.boot_mode = :gui
+  config.vm.boot_mode = :gui unless ENV["GUILESS"]
 end
 # All Vagrant configuration is done below. The "2" in Vagrant.configure
 # configures the configuration version (we support older styles for
