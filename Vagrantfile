@@ -14,7 +14,7 @@ Vagrant.configure(2) do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
-  config.vm.box = "mast3rof0/lubuntu32"
+  config.vm.box = "mast3rof0/lubuntu64"
 
   config.vm.provision "file", :source => 'provision/autostart', 
     :destination => '/home/vagrant/.config/lxsession/Lubuntu/autostart'

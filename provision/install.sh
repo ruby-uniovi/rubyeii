@@ -8,4 +8,4 @@ sudo apt-get install -y curl
 gpg --keyserver hkp://keys.gnupg.net --recv-keys D39DC0E3
 \curl -sSL https://get.rvm.io | bash -s stable
 source /etc/profile.d/rvm.sh
-rvm use --install --default 2.2.0 
+rvm use --install --default 2.1.5
