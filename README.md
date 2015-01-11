@@ -19,4 +19,5 @@ cd rubyeii
 vagrant up
 ~~~
 
-After a while, this should open a Lubuntu session in a new window
+After a while, this should open a Lubuntu session in a new window. You may login as
+vagrant/vagrant.
