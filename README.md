@@ -1,7 +1,7 @@
 RUBY@EII
 ========
 
-This repo necessary software and code for following the 2 day Ruby bootcamp at EII
+This repo contains necessary software and code for following the 2 day Ruby bootcamp at EII
 
 Software requirements
 ---------------------
@@ -26,7 +26,7 @@ vagrant/vagrant.
 Usage
 -----
 
-For regular usage do `vagrant up`, for ssh only work you may do
+For regular usage do `vagrant up`, for ssh only work you can also do
 
 ~~~bash
 GUILESS=1 vagrant up
