@@ -16,6 +16,14 @@ Vagrant.configure(2) do |config|
   # boxes at https://atlas.hashicorp.com/search.
   config.vm.box = "mast3rof0/lubuntu32"
 
+  config.vm.provision "file", :source => 'provision/autostart', 
+    :destination => '/home/vagrant/.config/lxsession/Lubuntu/autostart'
+  config.vm.provision "file", :source => 'provision/lxterminal.desktop', 
+    :destination => '/home/vagrant/Desktop/lxterminal.desktop'
+  config.vm.provision "file", :source => 'provision/lxterminal.desktop', 
+    :destination => '/home/vagrant/.local/share/applications/lxterminal.desktop'
+  config.vm.provision "shell", :path => 'provision/install.sh'
+
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
   # `vagrant box outdated`. This is not recommended.
