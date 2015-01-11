@@ -1,8 +1,6 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
-Vagrant.configure("1") do |config|
-  config.vm.boot_mode = :gui unless ENV["GUILESS"]
-end
+
 # All Vagrant configuration is done below. The "2" in Vagrant.configure
 # configures the configuration version (we support older styles for
 # backwards compatibility). Please don't change it unless you know what
@@ -16,14 +14,21 @@ Vagrant.configure(2) do |config|
   # boxes at https://atlas.hashicorp.com/search.
   config.vm.box = "mast3rof0/lubuntu64"
 
+  #copy files
   config.vm.provision "file", :source => 'provision/autostart', 
     :destination => '/home/vagrant/.config/lxsession/Lubuntu/autostart'
   config.vm.provision "file", :source => 'provision/lxterminal.desktop', 
     :destination => '/home/vagrant/Desktop/lxterminal.desktop'
   config.vm.provision "file", :source => 'provision/lxterminal.desktop', 
     :destination => '/home/vagrant/.local/share/applications/lxterminal.desktop'
+  
+  #provision machine
   config.vm.provision "shell", :path => 'provision/install.sh'
 
+  config.vm.provider "virtualbox" do |vb|
+     # Display the VirtualBox GUI when booting the machine
+     vb.gui = true
+  end
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
   # `vagrant box outdated`. This is not recommended.
