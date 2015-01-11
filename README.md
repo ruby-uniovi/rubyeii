@@ -17,6 +17,7 @@ Install instructions
 git clone https://github.com/ruby-eii/rubyeii.git
 cd rubyeii
 vagrant up
+vagrant reload
 ~~~
 
 After a while, this should open a Lubuntu session in a new window. You may login as
