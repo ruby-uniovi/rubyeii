@@ -14,6 +14,8 @@ Vagrant.configure(2) do |config|
   # boxes at https://atlas.hashicorp.com/search.
   config.vm.box = "mast3rof0/lubuntu64"
 
+  config.vm.network "forwarded_port", :guest => 4567, :host => 4567
+
   #copy files
   config.vm.provision "file", :source => 'provision/autostart', 
     :destination => '/home/vagrant/.config/lxsession/Lubuntu/autostart'
