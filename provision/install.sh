@@ -1,4 +1,4 @@
- #!/usr/bin/env bash
+#!/usr/bin/env bash
 
 #prerequisites
 sudo add-apt-repository ppa:webupd8team/sublime-text-2
@@ -17,3 +17,6 @@ cp /usr/share/applications/sublime-text-2.desktop /home/vagrant/Desktop/
 
 #mongodb
 sudo apt-get install -y mongodb
+
+#heroku
+wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh 
