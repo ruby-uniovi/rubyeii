@@ -24,6 +24,7 @@ Vagrant.configure(2) do |config|
   
   #provision machine
   config.vm.provision "shell", :path => 'provision/install.sh'
+  config.vm.provision "shell", :path => 'provision/projects.sh', :privileged => false
 
   config.vm.provider "virtualbox" do |vb|
      # Display the VirtualBox GUI when booting the machine
