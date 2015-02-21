@@ -14,3 +14,6 @@ rvm use --install --default 2.1.5
 #sublime-text-2
 sudo apt-get install sublime-text
 cp /usr/share/applications/sublime-text-2.desktop /home/vagrant/Desktop/
+
+#mongodb
+sudo apt-get install -y mongodb
