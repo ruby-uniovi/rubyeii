@@ -6,8 +6,8 @@ This repo contains the necessary software and code for following the 2 day Ruby 
 Software requirements
 ---------------------
 
-* Virtualbox
-* Virtualbox extension pack
+* VirtualBox
+* VirtualBox extension pack
 * Vagrant
 
 Install instructions
