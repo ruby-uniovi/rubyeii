@@ -1,7 +1,7 @@
-RUBY@EII
-========
+ruby@uniovi
+===========
 
-This repo contains necessary software and code for following the 2 day Ruby bootcamp at EII
+This repo contains the necessary software and code for following the 2 day Ruby bootcamp at EII (University of Oviedo)
 
 Software requirements
 ---------------------
@@ -14,7 +14,7 @@ Install instructions
 ---------------
 
 ~~~bash
-git clone https://github.com/ruby-eii/rubyeii.git
+git clone https://github.com/ruby-uniovi/rubyeii.git
 cd rubyeii
 vagrant up
 vagrant reload
