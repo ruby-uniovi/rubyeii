@@ -1,7 +1,9 @@
 ruby@uniovi
 ===========
 
-This repo contains the necessary software and code for following the 2 day Ruby bootcamp at EII (University of Oviedo)
+This project contains the ruby@uniovi's virtualized development environment.
+
+ruby@uniovi is a 2-day workshop which will be held in the University of Oviedo (Spain), from 4th to 6th March 2015.
 
 Software requirements
 ---------------------
@@ -20,8 +22,9 @@ vagrant up
 vagrant reload
 ~~~
 
-After a while, this should open a Lubuntu session in a new window. You may login as
-vagrant/vagrant.
+After a while, this should open a Lubuntu session in a new window.
+
+You may login as vagrant/vagrant.
 
 Usage
 -----
@@ -33,3 +36,9 @@ GUILESS=1 vagrant up
 vagrant ssh
 ~~~
 
+Known issues
+------------
+
+If the download is interrupted during `vagrant up`, you'd probably get an error message saying: HTTP server doesn't seem to support byte ranges".
+
+If that's the case, please refer to https://github.com/mitchellh/vagrant/issues/4479
