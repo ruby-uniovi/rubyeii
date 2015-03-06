@@ -25,7 +25,7 @@ vagrant reload
 
 After a while, this should open a Lubuntu session in a new window. You may login as vagrant/vagrant.
 
-One way to check that the box provisioning has been completed is to run the test suite of one of the projects. By example, issue the following commands from the command line (Ctrl + alt + t or LXTerminal icon @ desktop)
+One way to check that the box provisioning has been completed is to run the test suite of one of the projects. By example, issue the following commands from the command line (<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd> / LXTerminal icon @ desktop)
 
 ~~~
 cd /vagrant/projects/jukebox-sinatra
